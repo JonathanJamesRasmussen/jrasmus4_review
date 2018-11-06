@@ -17,21 +17,21 @@ final class Main {
 	 */
 	public static void main(final String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String accStr;  
+		String initialString;  
 		String choice;
 		
 		if (args.length == 0) {
-			accStr = "20";
+			initialString = "20";
 			choice = "1";
 			
 		}
 		else{
 			
 			System.out.println("Enter your string of numbers or just one number:");
-			accStr = br.readLine();
+			initialString = br.readLine();
 			
 			System.out.println("Initial String: ");
-			System.out.println(accStr);
+			System.out.println(initialString);
 			
 			System.out.println("Algorithm Codes :\n"
 					+ "0 (Bubble Sort) \t 1 (Selection Sort) \t 2 (Insertion Sort)\n"
@@ -44,7 +44,7 @@ final class Main {
 		
 		try {
 			
-			data.initializeArray(accStr);
+			data.initializeArray(initialString);
 			
 			
 			
